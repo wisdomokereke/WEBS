@@ -19,7 +19,7 @@
 }
 
 .nav h2 {
-    font-size: 1.44rem;
+    font-size: 1.2rem;
 }
 
 .navLinks {
@@ -28,6 +28,8 @@
     display: flex;
     gap: 30px;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 .navLinks li a {
@@ -51,27 +53,25 @@
 /* MAIN PAGE STYLING STARTS HERE  */
 
 .hero {
-    background-image: url("../icons/res1.jpeg");
+    background-image: url("/icons/min3.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
     height: 600px;
     width: 600px;
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
 }
-
+/* 
 @media (max-width: 1366px) {
     .hero {
-        height: 600px;
-        width: 600px;
         background-image: url("../icons/res1.jpeg");
         background-repeat: no-repeat;
-        background-size: cover;
         background-position: center;
-        display: flex;
-        justify-content: center;
+        background-attachment: fixed;
         border-radius: 10px;
     }
-}
+} */
 
 
 /* MAIN PAGE STYLING ENDS HERE  */
