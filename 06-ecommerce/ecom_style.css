@@ -40,8 +40,8 @@
 
 #shopCart {
     /* background-color: black; */
-    height: 2rem;
-    width: 2rem;
+    height: 1.8rem;
+    width: 1.8rem;
     padding: 3px;
     border-radius: 10px;
 }
@@ -51,16 +51,35 @@
 
 
 /* MAIN PAGE STYLING STARTS HERE  */
-
+.hero_cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 0.8rem;
+}
+.hero_cta p {
+    font-size: 0.6rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.hero_cta h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    line-height: 2.5rem;
+}
 .hero {
-    background-image: url("/icons/min3.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../icons/min3.jpg");
     background-repeat: no-repeat;
-    height: 600px;
-    width: 600px;
     background-position: center;
-    background-size: cover;
     background-attachment: fixed;
-    border-radius: 10px;
+    height: 500px;
+    background-size: cover;
 }
 /* 
 @media (max-width: 1366px) {
@@ -73,5 +92,63 @@
     }
 } */
 
+.display_items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 760px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+}
+
+.item_row1,
+.item_row2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+}
+.item_row1 img, 
+.item_row2 img {
+    width: 184px;
+    height: 276px;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+}
 /* MAIN PAGE STYLING ENDS HERE  */
+
+/* EXPLORE PRODUCTS SECTION STYLING STARTS HERE  */
+
+.explore {
+    /* position: relative; */
+    margin-top: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}   
+.product_image {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.product_image img{
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1/1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* EXPLORE PRODUCTS SECTION STYLING ENDS HERE  */
